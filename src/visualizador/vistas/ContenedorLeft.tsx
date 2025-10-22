@@ -15,7 +15,7 @@ export const ContenedorLeft = () => {
       </p>
 
       {/* botones */}
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 py-4">
+      <div className="flex items-center justify-center gap-4 py-4">
         <button className="w-[12rem] h-[2.5rem] rounded-md bg-red-600 text-[#fff] font-bold cursor-pointer">
           Ver menú
         </button>
