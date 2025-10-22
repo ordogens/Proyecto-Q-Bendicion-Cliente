@@ -8,12 +8,26 @@ export const ContenedorMenu = () => {
         <img src={logo} alt="" className="w-[6rem] h-[6rem] rounded-full" />
       </div>
       <nav className="w-full h-[6rem] flex flex-col items-center gap-1 justify-center">
-        <NavLink className="font-bold transition duration-500 hover:text-red-600" to="/">Home</NavLink>
-        <NavLink className="font-bold transition duration-500 hover:text-red-600" to="/menuComidas">Menu</NavLink>
-        <NavLink className="font-bold transition duration-500 hover:text-red-600" to="/ubicacion">Ubicacion</NavLink>
+        <NavLink
+          className="font-bold transition duration-500 hover:text-red-600"
+          to="/"
+        >
+          Home
+        </NavLink>
+        <NavLink
+          className="font-bold transition duration-500 hover:text-red-600"
+          to="/menuComidas"
+        >
+          Menu
+        </NavLink>
+        <NavLink
+          className="font-bold transition duration-500 hover:text-red-600"
+          to="/ubicacion"
+        >
+          Ubicacion
+        </NavLink>
       </nav>
-      <div>
-      </div>
+      <div></div>
     </div>
   );
 };
