@@ -16,10 +16,10 @@ export const ContenedorLeft = () => {
       </p>
       {/* botones */}
       <div className="h-[4rem]  flex items-center gap-4 bt">
-        <button className="w-[12rem] h-[2.5rem] rounded-md bg-red-600 text-[#fff] font-bold">
+        <button className="w-[12rem] h-[2.5rem] rounded-md bg-red-600 text-[#fff] font-bold cursor-pointer">
           Ver menu
         </button>
-        <button className="w-[6rem] h-[2.5rem] rounded-md bg-[#868686] font-bold">
+        <button className="w-[6rem] h-[2.5rem] rounded-md bg-[#868686] font-bold cursor-pointer">
           Horarios
         </button>
       </div>
