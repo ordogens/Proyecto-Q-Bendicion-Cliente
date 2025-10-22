@@ -176,41 +176,49 @@ export const menuData: MenuCategory[] = [
         id: 1,
         name: "Gaseosa 1.5L Coca Cola",
         price: 7000,
+        imgn:"../../public/jugos/coca.jpg"
       },
       {
         id: 2,
         name: "Botella de Agua",
         price: 3000,
+        imgn:"../../public/jugos/agua.png"
       },
       {
         id: 3,
         name: "Gaseosa 350mL",
         price: 3500,
+        imgn:"../../public/jugos/gaseosa.jpg"
       },
       {
         id: 4,
         name: "Jugo Natural en Agua",
         price: 6000,
+        imgn:"../../public/jugos/jugo-de-frutas.jpg"
       },
       {
         id: 5,
         name: "Jugo Natural en Leche",
         price: 8000,
+        imgn:"../../public/jugos/jugos-leche.jpg"
       },
       {
         id: 6,
         name: "Limonada Natural",
         price: 5000,
+        imgn:"../../public/jugos/limonadaL.webp"
       },
       {
         id: 7,
         name: "Limonada Mango Biche",
         price: 7500,
+        imgn:"../../public/jugos/limonada.webp"
       },
       {
         id: 8,
         name: "Jugo Hit 1L",
         price: 7500,
+        imgn:"../../public/jugos/Hugos-Hit.png"
       },
     ],
   },
@@ -221,11 +229,13 @@ export const menuData: MenuCategory[] = [
         id: 1,
         name: "Tinto",
         price: 3000,
+        imgn: "../../public/bebidasCafe/cafe.webp",
       },
       {
         id: 2,
         name: "Café con Leche",
         price: 4000,
+         imgn: "../../public/bebidasCafe/cafeYleche.jpg",
       },
     ],
   },
@@ -236,17 +246,20 @@ export const menuData: MenuCategory[] = [
         id: 1,
         name: "Porción papa francesa",
         price: 8000,
+        imgn: "../../public/otros/francesa.jpg",
       },
       {
         id: 2,
         name: "Empanadas de pollo",
         price: 2500,
+        imgn: "../../public/otros/empanadas.jpg",
       },
       {
         id: 3,
         name: "Chunchulla 200gr",
         ingredients: ["Arepa", "papa salada", "tomate", "limón", "trozos de maduro"],
         price: 16000,
+        imgn: "../../public/otros/chunchulla.webp",
       },
     ],
   },

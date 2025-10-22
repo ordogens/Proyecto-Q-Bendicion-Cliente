@@ -37,7 +37,7 @@ export const MenuComidas = () => {
                     <div className="flex gap-2">
                       <div>
                         <img
-                          className="size-20"
+                          className="size-20 rounded-md"
                           src={item.imgn}
                           alt={item.name}
                         />
