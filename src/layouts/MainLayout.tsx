@@ -1,5 +1,5 @@
-import type { ReactNode } from "react";
 import { Header } from "../header/Header";
+import type { ReactNode } from "react";
 import { ContenedorMenu } from "../contendorMenu/ContenedorMenu";
 
 interface MainLayoutProps {
@@ -8,7 +8,7 @@ interface MainLayoutProps {
 
 export const MainLayout = ({ children }: MainLayoutProps) => {
   return (
-    <div className="flex flex-col md:flex-row w-full h-screen  bg-[#f5f5f5]">
+    <div className="flex flex-col md:flex-row w-full h-screen bg-[#f5f5f5]">
       <aside className="hidden md:block w-fit">
         <ContenedorMenu />
       </aside>

@@ -24,7 +24,7 @@ export const Home = () => {
       <div className="flex flex-col-reverse justify-between lg:flex-row w-full h-auto lg:h-full gap-4  lg:gap-4 mt-4 lg:m-0">
         <div className="w-full lg:w-1/2 flex flex-col justify-center gap-2 lg:gap-38 items-center lg:text-left">
           <p className="text-base md:text-lg lg:text-2xl px-4 text-center">
-            En QueBendición transformamos las carnes, arepas y plátanos en momentos
+            En Q'Bendición transformamos las carnes, arepas y plátanos en momentos
             irresistibles. Ven y prueba lo que todos llaman una verdadera delicia
             hecha con amor.
           </p>

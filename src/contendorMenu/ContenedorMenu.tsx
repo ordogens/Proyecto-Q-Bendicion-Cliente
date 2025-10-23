@@ -1,33 +1,23 @@
-import logo from "../assets/deisy.png";
-import { NavLink } from "react-router";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router";
+import { UserMenu } from "./UserMenu";
+import { AdminMenu } from "./AdminMenu";
 
 export const ContenedorMenu = () => {
-  return (
-    <div className="bg-[#cccc] w-[10vw] h-full">
-      <div className="w-full h-[10rem]  flex justify-center items-center">
-        <img src={logo} alt="" className="w-[6rem] h-[6rem] rounded-full" />
-      </div>
-      <nav className="w-full h-[6rem] flex flex-col items-center gap-1 justify-center">
-        <NavLink
-          className="font-bold transition duration-500 hover:text-red-600"
-          to="/"
-        >
-          Home
-        </NavLink>
-        <NavLink
-          className="font-bold transition duration-500 hover:text-red-600"
-          to="/menuComidas"
-        >
-          Menu
-        </NavLink>
-        <NavLink
-          className="font-bold transition duration-500 hover:text-red-600"
-          to="/ubicacion"
-        >
-          Ubicacion
-        </NavLink>
-      </nav>
-      <div></div>
-    </div>
-  );
+  const location = useLocation(); // 👈 Detecta los cambios de ruta
+  const [isAdmin, setIsAdmin] = useState(false);
+
+  useEffect(() => {
+    const currentPath = location.pathname; // 👈 Lee la ruta actual
+    console.log("Ruta actual:", currentPath);
+
+    // 👇 Puedes ajustar para detectar cualquier subruta admin (ej: /admin/ventas)
+    if (currentPath.startsWith("/admin")) {
+      setIsAdmin(true);
+    } else {
+      setIsAdmin(false);
+    }
+  }, [location]);
+
+  return <div className="h-full ">{isAdmin ? <AdminMenu /> : <UserMenu />}</div>;
 };
